@@ -102,7 +102,7 @@ main#content h6 + p {
 
 main#content p {
     color: #394548;
-    margin: 16px 0;
+    margin: 20px 0;
 }
 
 main#content hr {
@@ -111,6 +111,44 @@ main#content hr {
     background: #d8d8d8;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    main#content {
+        padding: 0 10px; /* Add padding to the main content container */
+    }
+
+    main#content p,
+    main#content h1,
+    main#content h2,
+    main#content h3,
+    main#content h4,
+    main#content h5,
+    main#content h6,
+    main#content ul,
+    main#content ol,
+    main#content blockquote {
+        margin-left: 10px; /* Add left margin */
+        margin-right: 10px; /* Add right margin */
+    }
+
+    main#content img {
+        max-width: 100%; /* Ensure the image does not exceed the width of its container */
+        width: 100%; /* Make the image take the full width of its container */
+        height: auto; /* Maintain the aspect ratio */
+        display: block; /* Display the image as a block element */
+        margin-left: auto; /* Center the image horizontally */
+        margin-right: auto; /* Center the image horizontally */
+    }
+
+    main#content img[src*="prof_pic_alt.jpg"] {
+        float: none; /* Remove float on mobile devices */
+        margin-left: auto; /* Center the image horizontally */
+        margin-right: auto; /* Center the image horizontally */
+        margin-bottom: 20px; /* Add some space below the image */
+        max-width: 150px; /* Ensure the profile photo does not exceed 150px */
+        width: auto; /* Maintain the aspect ratio */
+    }
+}
 main#content abbr {
     cursor: help;
 }
@@ -213,22 +251,30 @@ main#content #toc ol li:before {
     counter-increment: item;
 }
 
+main#content img {
+    max-width: 100%; /* Ensure the image does not exceed the width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Display the image as a block element */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto; /* Center the image horizontally */
+}
+
 main#content img[src*="prof_pic_alt.jpg"] {
     float: right;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 20px; /* Add some space below the image */
-    width: 200px; /* Set the desired width for the profile photo */
+    width: 250px; /* Set the desired width for the profile photo */
     height: auto; /* Maintain the aspect ratio */
 }
 
 main#content figure {
-    margin: 16px 0;
+    margin: 10px 0;
 }
 
 main#content figure img {
     display: block;
     max-width: 100%;
-    margin: 50 px;
+    margin: 0 px;
 }
 
 main#content figure figcaption {
@@ -243,7 +289,7 @@ main#content figure figcaption {
 main#content figure figcaption h4 {
     font-style: normal;
     display: inline;
-    margin: 0;
+    margin: 0px;
 }
 
 main#content figure figcaption p {
