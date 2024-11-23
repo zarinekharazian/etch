@@ -148,7 +148,28 @@ main#content hr {
         max-width: 150px; /* Ensure the profile photo does not exceed 150px */
         width: auto; /* Maintain the aspect ratio */
     }
+
+    header#banner {
+        padding: 10px; /* Add padding to the header */
+        text-align: center; /* Center the header content */
+    }
+
+    header#banner nav ul {
+        display: block; /* Stack the navigation items vertically */
+        padding: 0;
+    }
+
+    header#banner nav ul li {
+        display: block; /* Stack the navigation items vertically */
+        margin: 5px 0; /* Add margin between navigation items */
+    }
+
+    footer {
+        padding: 10px; /* Add padding to the footer */
+        text-align: center; /* Center the footer content */
+    }
 }
+
 main#content abbr {
     cursor: help;
 }
