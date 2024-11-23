@@ -280,3 +280,17 @@ footer#footer {
     color: #b3b3b3;
     margin: 40px 0;
 }
+
+.profile-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.profile-container img {
+    flex: 0 0 200px;
+    margin-left: 20px;
+    width: 200px;
+    height: auto;
+    border-radius: 50%; /* Optional: to make the photo circular */
+}
