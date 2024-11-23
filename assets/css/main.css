@@ -111,6 +111,10 @@ main#content hr {
     background: #d8d8d8;
 }
 
+main#content abbr {
+    cursor: help;
+}
+
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     main#content {
@@ -169,10 +173,15 @@ main#content hr {
         padding: 10px; /* Add padding to the footer */
         text-align: left; /* Align the footer content to the left */
     }
-}
 
-main#content abbr {
-    cursor: help;
+    /* Align the dates in posts on mobile devices */
+    main#content .post-date {
+        text-align: left; /* Align the date text to the left */
+        font-size: 0.85em; /* Adjust the font size as needed */
+        color: #767676; /* Adjust the color as needed */
+        margin-bottom: 10px; /* Add some space below the date */
+        display: block; /* Ensure the date is displayed as a block element */
+    }
 }
 
 /* index.html styles */
