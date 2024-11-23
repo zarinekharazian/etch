@@ -151,7 +151,7 @@ main#content hr {
 
     header#banner {
         padding: 10px; /* Add padding to the header */
-        text-align: center; /* Center the header content */
+        text-align: left; /* 
     }
 
     header#banner nav ul {
@@ -166,7 +166,7 @@ main#content hr {
 
     footer {
         padding: 10px; /* Add padding to the footer */
-        text-align: center; /* Center the footer content */
+        text-align: left;
     }
 }
 
